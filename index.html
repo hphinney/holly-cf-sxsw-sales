@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SXSW Capital Factory House - Strategic Go-to-Market Plan</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #f8f9fa;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .header .subtitle {
+            font-size: 1.8rem;
+            margin: 20px 0 0 0;
+            color: #ecf0f1;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .strategy-overview {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .strategy-overview h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .quota-strategy {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .quota-strategy h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .new-business-focus {
+            background: rgba(231, 76, 60, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .package-card {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .package-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .package-card .amount {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .phase-section {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .phase-header {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .phase-header h3 {
+            margin: 0;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .phase-dark {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+        }
+
+        .mitigation-box {
+            background: rgba(231, 76, 60, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .mitigation-box h4 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .success-strategy {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .success-strategy h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .new-business-strategy {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .new-business-strategy h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .mission-box {
+            background: rgba(231, 76, 60, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .sector-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .sector-card {
+            background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            border-top: 3px solid #e74c3c;
+        }
+
+        .sector-card h4 {
+            color: #e74c3c;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .inventory-overview {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .inventory-overview h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .inventory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .inventory-card {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .inventory-card h4 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .inventory-card .price {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .timeline-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+
+        .timeline-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .timeline-item {
+            background: rgba(236, 240, 241, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .timeline-item .date {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .path-to-success {
+            background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .path-to-success h2 {
+            color: #f39c12;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .overachievement-box {
+            background: rgba(231, 76, 60, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border: 2px solid #e74c3c;
+        }
+
+        .revenue-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .revenue-card {
+            background: rgba(248, 249, 250, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            border-top: 4px solid #e74c3c;
+        }
+
+        .revenue-card h4 {
+            color: #f39c12;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .email-section {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .email-header {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .competitive-advantage {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .competitive-advantage h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #f39c12;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .contact-btn {
+            background: rgba(231, 76, 60, 0.8);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-btn:hover {
+            background: #e74c3c;
+            transform: translateY(-2px);
+        }
+
+        .feedback-btn {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .feedback-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+        }
+
+        .emoji {
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .sector-grid,
+            .package-grid,
+            .inventory-grid,
+            .revenue-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><span class="emoji">🚀</span> SXSW Capital Factory House <span class="emoji">🚀</span></h1>
+            <div class="subtitle">Strategic Go-to-Market Plan for Account Executive Assignment</div>
+        </div>
+
+        <div class="content">
+            <!-- Executive Summary -->
+            <div class="section">
+                <div style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; padding: 30px; border-radius: 15px; margin-bottom: 40px; text-align: center;">
+                    <h2 style="color: #f39c12; margin-bottom: 20px;">📋 Executive Summary 📋</h2>
+                    <div style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 15px;">
+                        <strong>Opportunity:</strong> Capital Factory's SXSW event represents our biggest revenue opportunity of the year, with thousands of connections made and hundreds of VIPs attending during Austin's premier tech conference.
+                    </div>
+                    <div style="background: rgba(231, 76, 60, 0.2); padding: 20px; border-radius: 10px; border-left: 4px solid #e74c3c; margin: 20px 0;">
+                        <strong style="color: #f39c12; font-size: 1.2rem;">We're launching a sponsorship program to secure $500K+ in revenue for Capital Factory House at SXSW 2026.</strong>
+                    </div>
+                    <div style="font-size: 1.1rem;">
+                        <strong>Key Goals:</strong> Generate $500K+ revenue through strategic sponsorship sales, expand our corporate partnership network, and establish Capital Factory as the premier SXSW destination for startup ecosystem engagement.
+                    </div>
+                </div>
+                
+                <!-- Target Market Statement -->
+                <div style="background: rgba(52, 73, 94, 0.1); color: #2c3e50; padding: 25px; border-radius: 12px; margin-bottom: 40px; text-align: center; border-left: 4px solid #f39c12;">
+                    <div style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 15px;">
+                        <strong style="color: #f39c12;">Target Market:</strong> We're targeting Series A–C SaaS brands, health tech innovators, and APAC expansion service firms with no current SXSW footprint.
+                    </div>
+                    <div style="font-size: 1.1rem; line-height: 1.6;">
+                        <strong style="color: #f39c12;">Market Problem:</strong> Sponsors need curated visibility during SXSW without getting lost in the noise. CF House offers gravity, not clutter.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sales Strategy & Inventory Prioritization -->
+            <div class="strategy-overview">
+                <h2 style="text-align: center;"><span class="emoji">🤖</span> Sales Strategy & Inventory Prioritization <span class="emoji">🤖</span></h2>
+                
+                <div class="quota-strategy">
+                    <h3><span class="emoji">🎯</span> $500,000 Sales Quota Strategy <span class="emoji">🎯</span></h3>
+                    <div class="new-business-focus">
+                        <strong>New Business Focus:</strong> 80% new clients ($400K) + 20% renewal support ($100K) = Aggressive new client acquisition strategy while existing rep handles primary renewal responsibilities.
+                    </div>
+                    
+                    <div class="package-grid">
+                        <div class="package-card" style="background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);">
+                            <h4>Premium New Business</h4>
+                            <div class="amount">6 × $40K avg = $240K</div>
+                            <div>Eli Lilly, Cribl.io, Sword Health</div>
+                        </div>
+                        <div class="package-card" style="background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);">
+                            <h4>Mid-Tier New Business</h4>
+                            <div class="amount">8 × $20K avg = $160K</div>
+                            <div>Kontent.ai, SleekFlow, Acclime</div>
+                        </div>
+                        <div class="package-card" style="background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);">
+                            <h4>Renewal Support</h4>
+                            <div class="amount">10 × $10K avg = $100K</div>
+                            <div>Assist with existing sponsor renewals</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 1: Renewal Priority -->
+            <div class="phase-section">
+                <div class="phase-header">
+                    <h3><span class="emoji">⭐</span> Phase 1: Renewal Priority (March-May 2025)</h3>
+                </div>
+                <div>
+                    <strong>STRATEGY:</strong> Immediately after CF House 2025 ends, launch 2026 renewals while <strong>ROI is fresh</strong> and relationships are strongest. Target existing sponsors first (<strong>60% of business foundation</strong>).
+                </div>
+                <div style="margin-top: 20px;">
+                    <strong style="color: #f39c12;">PRIORITY FOCUS:</strong> Secure premium packages (<strong>Founders Lounge $60K, Secret Salon $35K, VC Brunch $30K</strong>) with early-bird pricing and preferred selection.
+                </div>
+                <div style="margin-top: 20px;">
+                    <strong style="color: #e74c3c;">TARGET LIST:</strong> 2025 CF House sponsors • Austin tech partners • Existing Capital Factory ecosystem relationships
+                </div>
+            </div>
+
+            <!-- Phase 2: New Business Development -->
+            <div class="phase-section phase-dark">
+                <div class="phase-header">
+                    <h3><span class="emoji">⭐</span> Phase 2: New Business Development (June-November 2025)</h3>
+                </div>
+                <div>
+                    <strong style="color: #e74c3c;">STRATEGY:</strong> Focus on <strong>net-new clients</strong> Capital Factory hasn't partnered with before. <strong>Target emerging sectors and non-traditional sponsors</strong> while renewals are locked. <strong>Use renewal success stories as social proof.</strong>
+                </div>
+                <div style="margin-top: 20px;">
+                    <strong style="color: #e74c3c;">PRIORITY FOCUS:</strong> <strong>Health & MedTech • AI & Data Intelligence • Enterprise Solutions • Government & Civic • International prospects with zero SXSW exposure.</strong>
+                </div>
+                <div style="margin-top: 20px;">
+                    <strong style="color: #e74c3c;">TARGET LIST:</strong> <strong>Eli Lilly • Abridge Health • Cribl.io • Unstructured • CIA • European Union • CF VIP tour alumni</strong>
+                </div>
+            </div>
+
+            <!-- Phase 3: Final Campaign Push -->
+            <div class="phase-section">
+                <div class="phase-header">
+                    <h3><span class="emoji">⭐</span> Phase 3: Final Campaign Push (December 2025-February 2026)</h3>
+                </div>
+                <div>
+                    <strong style="color: #e74c3c;">STRATEGY:</strong> Traditional campaign launch for remaining inventory. Create <strong>urgency messaging</strong> for mid-tier packages, offer last-minute opportunities for companies already attending SXSW.
+                </div>
+                <div style="margin-top: 20px;">
+                    <strong style="color: #e74c3c;">PRIORITY FOCUS:</strong> <strong>Startup Crawl Title ($55K) • Howdy Lounge ($30K) • Space Rentals • Podcast Room • volume sales packages ($5K-$15K).</strong>
+                </div>
+                <div style="margin-top: 20px;">
+                    <strong style="color: #e74c3c;">TARGET LIST:</strong> <strong>SXSW exhibitors needing touchpoints • Local Austin businesses • Texas relocating companies • Apollo.io/ZoomInfo prospects</strong>
+                </div>
+            </div>
+
+            <!-- New Business Development Strategy -->
+            <div class="new-business-strategy" style="font-size: 1.1rem;">
+                <h2 style="color: #f39c12; margin-bottom: 30px; display: flex; align-items: center; justify-content: center; gap: 10px;"><span class="emoji">💡</span> New Business Development Strategy <span class="emoji">💡</span></h2>
+                <div class="mission-box" style="font-size: 1.1rem;">
+                    <strong style="font-size: 1.2rem;"><span class="emoji">📋</span> Mission: Expand Beyond Current Sponsor Base</strong>
+                    <div style="margin-top: 10px; font-size: 1.1rem;">Focus on net-new clients Capital Factory hasn't partnered with before. Target emerging sectors and non-traditional sponsors for authentic startup ecosystem engagement.</div>
+                </div>
+                <div style="margin-top: 20px; text-align: center; font-style: italic; font-size: 1.1rem;">
+                    Strategy: Leverage SXSW attendance data and industry research to identify high-value prospects with no current CF House presence.
+                </div>
+            </div>
+
+            <!-- Target Sectors -->
+            <div class="section">
+                <div class="sector-grid">
+                    <div class="sector-card">
+                        <h4><span class="emoji">🚀</span> Emerging Sectors</h4>
+                        <div><strong style="color: #f39c12;">Climate Tech</strong> - Sustainability-focused companies</div>
+                        <div><strong style="color: #f39c12;">Web3/Blockchain</strong> - Crypto companies seeking legitimacy</div>
+                        <div><strong style="color: #f39c12;">EdTech</strong> - Education technology platforms</div>
+                    </div>
+
+                    <div class="sector-card">
+                        <h4><span class="emoji">⚙️</span> Lead Generation Tools</h4>
+                        <div><strong style="color: #f39c12;">Apollo.io</strong> - B2B contact database and outreach</div>
+                        <div><strong style="color: #f39c12;">ZoomInfo</strong> - Company intelligence and prospects</div>
+                        <div><strong style="color: #f39c12;">LinkedIn Sales Navigator</strong> - Social selling platform</div>
+                    </div>
+
+                    <div class="sector-card">
+                        <h4><span class="emoji">📊</span> Zero SXSW Exposure Strategy</h4>
+                        <div><strong style="color: #f39c12;">Research Methodology</strong> - Target companies with no current SXSW presence</div>
+                        <div style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">This ensures we're not competing with existing relationships and can position CF House as their first official SXSW touchpoint.</div>
+                    </div>
+</html>emoji">🏥</span> Health & MedTech</h4>
+                        <div><strong style="color: #f39c12;">Axle Health</strong> - AI-in-home health access and provider logistics (VC Brunch)</div>
+                        <div><strong style="color: #f39c12;">Eko Health</strong> - AI-enabled stethoscope demos, investor attraction (Founders Lounge)</div>
+                        <div><strong style="color: #f39c12;">Sword Health</strong> - AI innovation (Startup Crawl Title/Podcast Room)</div>
+                        <div><strong style="color: #f39c12;">Abridge Health</strong> - AI health innovation, strong storytelling (VC Brunch/Secret Salon)</div>
+                        <div><strong style="color: #f39c12;">AliveCor</strong> - Preventative health, demo potential (Cup of Capital/Lounge)</div>
+                        <div><strong style="color: #f39c12;">Care Access</strong> - Digital health startup, minimal SXSW footprint (Podcast Room/Cup of Capital)</div>
+                        <div><strong style="color: #f39c12;">Eli Lilly and Company</strong> - Pharma giant, no current CF presence (Founders Lounge/VC Brunch)</div>
+                        <div><strong style="color: #f39c12;">IQVIA Digital</strong> - Healthcare analytics, untapped by CF (Secret Salon/VC Brunch)</div>
+                    </div>
+
+                    <div class="sector-card">
+                        <h4><span class="emoji">💻</span> Technology & SaaS</h4>
+                        <div><strong style="color: #f39c12;">Clueso</strong> - AI + video SaaS for auto video/doc creation (Podcast Room/Howdy Lounge)</div>
+                        <div><strong style="color: #f39c12;">SleekFlow</strong> - Conversational AI, SEA-focused, fresh to US market (Howdy Lounge - US expansion angle)</div>
+                        <div><strong style="color: #f39c12;">Kontent.ai</strong> - Headless CMS platform, dev teams, global reach (Startup Crawl Title/Founders Lounge)</div>
+                        <div><strong style="color: #f39c12;">Cribl.io</strong> - Data observability, enterprise-grade, no SXSW presence (Startup Crawl Title/VC Brunch)</div>
+                        <div><strong style="color: #f39c12;">Anrok</strong> - Infrastructure utility for startups (Howdy Lounge)</div>
+                        <div><strong style="color: #f39c12;">Bright Data</strong> - Enterprise data-as-a-service (Startup Crawl Megastop/Howdy Lounge)</div>
+                        <div><strong style="color: #f39c12;">Finally</strong> - SMB financial management focus (Podcast Room)</div>
+                    </div>
+
+                    <div class="sector-card">
+                        <h4><span class="emoji">🤖</span> AI & Data Intelligence</h4>
+                        <div><strong style="color: #f39c12;">Unstructured</strong> - Open-source, developer-heavy brand (Crawl Title/Salon)</div>
+                        <div><strong style="color: #f39c12;">Vannevar Labs</strong> - High-growth defense analytics (Office Hours/Salon)</div>
+                        <div><strong style="color: #f39c12;">Air Space Intelligence</strong> - Defense + AI = niche gravity (Founders Lounge/Salon)</div>
+                    </div>
+
+                    <div class="sector-card">
+                        <h4><span class="emoji">⚙️</span> Enterprise Solutions</h4>
+                        <div><strong style="color: #f39c12;">Glean Technologies</strong> - Enterprise search solutions (Podcast Room/Howdy Lounge)</div>
+                        <div><strong style="color: #f39c12;">Acclime</strong> - APAC business expansion services (VC Brunch/Secret Salon)</div>
+                        <div><strong style="color: #f39c12;">Workato</strong> - Enterprise automation platform (Startup Crawl Megastop/Founders Lounge)</div>
+                    </div>
+
+                    <div class="sector-card">
+                        <h4><span class="emoji">🏛️</span> Government & Civic</h4>
+                        <div><strong style="color: #f39c12;">Central Intelligence Agency</strong> - Novel government presence</div>
+                        <div><strong style="color: #f39c12;">European Union</strong> - Civic/tourism, no CF history</div>
+                        <div><strong style="color: #f39c12;">Enterprise Ireland</strong> - Cultural + startup support org</div>
+                    </div>
+
+                    <div class="sector-card">
+                        <h4><span class="emoji">🏢</span> Texas Business Development</h4>
+                        <div><strong style="color: #f39c12;">City Economic Development</strong> - Austin, Dallas, Houston EDCs</div>
+                        <div><strong style="color: #f39c12;">Chamber of Commerce</strong> - Statewide partnerships</div>
+                        <div><strong style="color: #f39c12;">Corporate Relocations</strong> - Companies moving to Texas</div>
+                    </div>
+
+                    <div class="sector-card">
+                        <h4><span class="emoji">🌍</span> International VIP Network</h4>
+                        <div><strong style="color: #f39c12;">CF Tour Alumni</strong> - International visitors from facility tours</div>
+                        <div><strong style="color: #f39c12;">Global Delegations</strong> - Government/trade missions</div>
+                        <div><strong style="color: #f39c12;">Embassy Connections</strong> - Diplomatic economic teams</div>
+                    </div>
+
+                    <div class="sector-card">
+                        <h4><span class="
+                </div>
+            </div>
+
+            <!-- Sponsorship Inventory Overview -->
+            <div class="inventory-overview">
+                <h2><span class="emoji">⚙️</span> Sponsorship Inventory Overview <span class="emoji">⚙️</span></h2>
+                <div class="inventory-grid">
+                    <div class="inventory-card">
+                        <h4>Founders Lounge</h4>
+                        <div class="price">$60,000</div>
+                        <div>Exclusive 5th floor access, 10 reps, branded lounge</div>
+                    </div>
+                    <div class="inventory-card">
+                        <h4>Startup Crawl Title</h4>
+                        <div class="price">$55,000</div>
+                        <div>Title sponsor of biggest SXSW party since 2011</div>
+                    </div>
+                    <div class="inventory-card">
+                        <h4>Secret Salon</h4>
+                        <div class="price">$35,000</div>
+                        <div>Co-host Joshua Baer's exclusive founder VIP list</div>
+                    </div>
+                    <div class="inventory-card">
+                        <h4>VC Brunch</h4>
+                        <div class="price">$30,000</div>
+                        <div>Exclusive investor networking, 10 reps</div>
+                    </div>
+                    <div class="inventory-card">
+                        <h4>Howdy Lounge</h4>
+                        <div class="price">$30,000</div>
+                        <div>First impression check-in hub, 5 reps</div>
+                    </div>
+                    <div class="inventory-card">
+                        <h4>Happy Hour</h4>
+                        <div class="price">$15,000</div>
+                        <div>Daily networking events, 2 reps</div>
+                    </div>
+                    <div class="inventory-card">
+                        <h4>Startup Crawl Megastop</h4>
+                        <div class="price">$10,000</div>
+                        <div>Premium activation at biggest crawl stop</div>
+                    </div>
+                    <div class="inventory-card">
+                        <h4>Cup of Capital</h4>
+                        <div class="price">$5,000</div>
+                        <div>Morning coffee networking event branding</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strategic Timeline -->
+            <div class="timeline-section">
+                <h2><span class="emoji">📅</span> Strategic Timeline & Renewal Cycle <span class="emoji">📅</span></h2>
+                
+                <div style="background: rgba(231, 76, 60, 0.2); padding: 20px; border-radius: 10px; margin-bottom: 30px; border-left: 4px solid #e74c3c;">
+                    <h3 style="color: #e74c3c; margin-bottom: 15px;"><span class="emoji">✨</span> Key Insight: 60% Repeat Customer Base</h3>
+                    <div>Capital Factory's proven renewal strategy: Immediate post-event outreach captures sponsors for the following year while ROI is fresh and relationships are strongest.</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">March 17, 2025</div>
+                    <div><strong>Post-Event Renewal Launch:</strong> Begin 2026 renewals immediately after CF House 2025 ends - strike while ROI is hot and relationships are peak</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">April-May 2025</div>
+                    <div><strong>Renewal Priority Phase:</strong> Focus on 2025 sponsors first (60% of business) - secure commitments with early-bird pricing and preferred package selection</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">June-Nov 2025</div>
+                    <div><strong>New Business Development:</strong> Target net-new sponsors while renewals are locked. Use renewal success stories as social proof for prospects</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">Dec 15, 2025</div>
+                    <div><strong>Official 2026 Campaign Launch:</strong> Full outreach begins for remaining inventory with urgency messaging</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">Jan 15, 2026</div>
+                    <div><strong>Premium Tier Deadline:</strong> Founders Lounge, Secret Salon target close date</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">Feb 1, 2026</div>
+                    <div><strong>Mid-Tier Focus Shift:</strong> Startup Crawl, lounges, and mid-range packages</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">Feb 20, 2026</div>
+                    <div><strong>Final Push Begins:</strong> Last chance outreach for remaining inventory</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">Feb 26, 2026</div>
+                    <div><strong>Payment Deadline:</strong> All invoices must be paid 10 days before March 8 event start</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">March 17, 2026</div>
+                    <div><strong>Cycle Repeats:</strong> Launch 2027 renewals immediately post-event for maximum momentum</div>
+                </div>
+            </div>
+
+            <!-- Risk Mitigation & Contingency Planning -->
+            <div class="section">
+                <div style="background: #ffffff; padding: 40px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <h2 style="text-align: center; color: #2c3e50; margin-bottom: 40px;"><span class="emoji">🛡️</span> Risk Mitigation & Contingency Planning <span class="emoji">🛡️</span></h2>
+                    
+                    <!-- Proactive Risk Management Strategy -->
+                    <div style="background: rgba(231, 76, 60, 0.1); padding: 30px; border-radius: 15px; margin-bottom: 30px; border: 2px solid #e74c3c; text-align: center;">
+                        <h3 style="color: #e74c3c; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; gap: 10px;"><span class="emoji">🎯</span> Proactive Risk Management Strategy</h3>
+                        <div style="color: #2c3e50; font-size: 1.1rem;">
+                            Anticipating challenges and building backup strategies to ensure <strong>$500K quota achievement</strong> regardless of market conditions or unexpected obstacles.
+                        </div>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); color: white; padding: 25px; border-radius: 12px; margin-bottom: 30px;">
+                        <h3 style="color: #f39c12; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;"><span class="emoji">🌍</span> Economic Downturn Impact</h3>
+                        <div style="margin-bottom: 15px;"><strong>Risk:</strong> Budget cuts affecting sponsorship spending</div>
+                        
+                        <div style="background: rgba(231, 76, 60, 0.2); padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 4px solid #e74c3c;">
+                            <h4 style="color: #f39c12; margin-bottom: 10px; font-weight: bold;">MITIGATION:</h4>
+                            <ul style="margin: 0; padding-left: 20px;">
+                                <li><strong>ROI-focused messaging:</strong> Lead generation and partnership value over brand exposure</li>
+                                <li><strong>Flexible payment terms:</strong> Quarterly payments vs. upfront to ease cash flow</li>
+                                <li><strong>Government/stable sectors:</strong> Target recession-resistant prospects (healthcare, government)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); color: white; padding: 25px; border-radius: 12px; margin-bottom: 30px;">
+                        <h3 style="color: #f39c12; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;"><span class="emoji">⏰</span> Timeline Compression Risk</h3>
+                        <div style="margin-bottom: 15px;"><strong>Risk:</strong> Delayed decision-making pushing sales into final weeks</div>
+                        
+                        <div style="background: rgba(231, 76, 60, 0.2); padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 4px solid #e74c3c;">
+                            <h4 style="color: #f39c12; margin-bottom: 10px; font-weight: bold;">MITIGATION:</h4>
+                            <ul style="margin: 0; padding-left: 20px;">
+                                <li><strong>Early pipeline building:</strong> 200% coverage by December 2025</li>
+                                <li><strong>Fast-track packages:</strong> Pre-approved, streamlined options for quick closes</li>
+                                <li><strong>Decision urgency tools:</strong> Early-bird pricing deadlines and limited inventory messaging</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); color: white; padding: 25px; border-radius: 12px; margin-bottom: 30px;">
+                        <h3 style="color: #f39c12; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;"><span class="emoji">📊</span> Renewal Rate Risk</h3>
+                        <div style="margin-bottom: 15px;"><strong>Risk:</strong> What if renewals drop below 60%?</div>
+                        
+                        <div style="background: rgba(231, 76, 60, 0.2); padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 4px solid #e74c3c;">
+                            <h4 style="color: #f39c12; margin-bottom: 10px; font-weight: bold;">MITIGATION:</h4>
+                            <ul style="margin: 0; padding-left: 20px;">
+                                <li><strong>Early warning system:</strong> Monthly renewal pipeline reviews starting in March 2025</li>
+                                <li><strong>Backup new business targets:</strong> 150% pipeline coverage for new prospects</li>
+                                <li><strong>Package downgrades:</strong> Offer smaller packages to retain sponsors vs. losing them completely</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Insurance Strategy -->
+            <div class="success-strategy">
+                <h3><span class="emoji">🛡️</span> Success Insurance Strategy</h3>
+                <div style="margin-bottom: 20px;">
+                    <strong>Pipeline Management:</strong> Maintain 3x coverage ratio – for every $1 of quota, build $3 in qualified pipeline to ensure closure despite inevitable losses.
+                </div>
+                <div>
+                    <strong>Weekly Risk Reviews:</strong> Every Friday pipeline assessment with backup prospect activation for any deals showing red flags or stalled momentum.
+                </div>
+            </div>
+
+            <!-- Path to $750K -->
+            <div class="path-to-success" style="background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); color: white;">
+                <h2 style="color: #f39c12; margin-bottom: 30px; display: flex; align-items: center; justify-content: center; gap: 10px;"><span class="emoji">🛠️</span> Path to $750K: Exceeding Expectations <span class="emoji">🛠️</span></h2>
+                
+                <div class="overachievement-box">
+                    <h3 style="color: #e74c3c; text-align: center; margin-bottom: 20px;"><span class="emoji">🎯</span> 50% Quota Overachievement Strategy</h3>
+                    <div style="text-align: center; font-size: 1.1rem;">
+                        <strong>Base Goal:</strong> $500K → <strong>Stretch Target:</strong> $750K through strategic expansion opportunities and innovative partnership models.
+                    </div>
+                </div>
+
+                <div class="revenue-grid">
+                    <div class="revenue-card" style="background: rgba(248, 249, 250, 0.1); border-top: 4px solid #e74c3c;">
+                        <h4 style="color: #f39c12; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;"><span class="emoji">💎</span> Premium Package Upsells</h4>
+                        <div><strong>Additional $100K Revenue:</strong></div>
+                        <ul>
+                            <li><strong>Multi-year contracts</strong> - 2-year commitments with 15% discount incentive</li>
+                            <li><strong>Package bundling</strong> - Combine multiple touchpoints for 20% premium pricing</li>
+                            <li><strong>Exclusive partnerships</strong> - Industry-specific exclusivity for 25% uplift</li>
+                        </ul>
+                    </div>
+
+                    <div class="revenue-card" style="background: rgba(248, 249, 250, 0.1); border-top: 4px solid #e74c3c;">
+                        <h4 style="color: #f39c12; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;"><span class="emoji">🌍</span> International Expansion</h4>
+                        <div><strong>Additional $75K Revenue:</strong></div>
+                        <ul>
+                            <li><strong>European corporations</strong> - Leverage SXSW London connections</li>
+                            <li><strong>APAC tech companies</strong> - Target companies expanding to US market</li>
+                            <li><strong>Government trade missions</strong> - Embassy and economic development partnerships</li>
+                        </ul>
+                    </div>
+
+                    <div class="revenue-card" style="background: rgba(248, 249, 250, 0.1); border-top: 4px solid #e74c3c;">
+                        <h4 style="color: #f39c12; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;"><span class="emoji">⚙️</span> Custom Package Creation</h4>
+                        <div><strong>Additional $75K Revenue:</strong></div>
+                        <ul>
+                            <li><strong>Industry summits</strong> - Sector-specific events within CF House</li>
+                            <li><strong>Executive roundtables</strong> - C-suite networking premium experiences</li>
+                            <li><strong>Demo showcase booths</strong> - Product demonstration premium spaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Competitive Advantage -->
+            <div class="competitive-advantage">
+                <h3><span class="emoji">🏆</span> Competitive Advantage for Overachievement <span class="emoji">🏆</span></h3>
+                
+                <div style="margin-bottom: 20px;">
+                    <strong>First-mover positioning:</strong> Many target companies have zero SXSW presence, creating premium pricing opportunities for exclusive market entry.
+                </div>
+                
+                <div>
+                    <strong>Relationship leverage:</strong> VIP tour alumni and international connections provide warm introductions to high-value prospects typically difficult to reach cold.
+                </div>
+            </div>
+
+            <!-- Draft Email -->
+            <div class="email-section">
+                <h2 class="email-header"><span class="emoji">✨</span> Draft SXSW Outreach Email</h2>
+                
+                <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; border-left: 4px solid #e74c3c;">
+                    <div><strong>To:</strong> marketing@cloudzero.com</div>
+                    <div><strong>Subject:</strong> Make CloudZero's SXSW Debut at Capital Factory House <span class="emoji">🚀</span></div>
+                    
+                    <div style="margin-top: 20px;">
+                        Hi CloudZero Marketing,
+                    </div>
+                    
+                    <div style="margin-top: 15px;">
+                        Congrats on the recent launch of <strong>CloudZero Optimize</strong>—no wonder FinOps communities are buzzing about your product! <span class="emoji">🎉</span>
+                    </div>
+                    
+                    <div style="margin-top: 15px;">
+                        I'm Holly Phinney with Capital Factory, and I'm reaching out because we believe <strong>SXSW 2026</strong> offers an ideal stage for CloudZero to make a <strong>powerful debut</strong> in the Texas startup and DevOps ecosystem.
+                    </div>
+                    
+                    <div style="margin-top: 15px;">
+                        <strong>Why CF House is right for you:</strong>
+                    </div>
+                    
+                    <ul style="margin-top: 10px;">
+                        <li><strong>No competing brand clutter</strong>—you'd be CloudZero's <strong>first official presence</strong> at SXSW</li>
+                        <li><strong>Direct access</strong> to 3,700+ founders, VCs, and engineering leaders in our Howdy Lounge or Podcast Room</li>
+                        <li><strong>Full ownership</strong> of a touchpoint: leading panels, branded discussions, or product deep-dive interviews</li>
+                    </ul>
+                    
+                    <div style="margin-top: 20px;">
+                        Would you be open to a 20-minute chat this week to explore how a debut sponsorship could elevate CloudZero's cloud-cost narrative at SXSW?
+                    </div>
+                    
+                    <div style="margin-top: 15px;">
+                        I can share custom mockups, ROI projections, and previous sponsor feedback—just say the word.
+                    </div>
+                    
+                    <div style="margin-top: 15px;">
+                        Looking forward to the conversation!
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                        <strong>Best,</strong><br>
+                        Holly Phinney<br>
+                        Sales Strategy Candidate, Capital Factory<br>
+                        <span class="emoji">🔗</span> <a href="https://linkedin.com/in/holly-phinney" target="_blank" style="color: #e74c3c;">linkedin.com/in/holly-phinney</a><br>
+                        <span class="emoji">📧</span> <a href="mailto:hollyphinney@gmail.com" style="color: #e74c3c;">hollyphinney@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h2><span class="emoji">🤝</span> Contact Information <span class="emoji">🤝</span></h2>
+                
+                <div style="margin-bottom: 30px; font-size: 1.1rem;">
+                    Ready to discuss your Capital Factory House sponsorship opportunity
+                </div>
+                
+                <div style="background: rgba(52, 73, 94, 0.3); padding: 30px; border-radius: 15px; margin-bottom: 30px; border: 2px solid rgba(243, 156, 18, 0.5);">
+                    <div class="contact-buttons">
+                        <a href="mailto:hollyphinney@gmail.com" class="contact-btn">
+                            <span class="emoji">📧</span> hollyphinney@gmail.com
+                        </a>
+                        <a href="https://linkedin.com/in/holly-phinney" target="_blank" class="contact-btn">
+                            <span class="emoji">📊</span> LinkedIn Profile
+                        </a>
+                        <a href="tel:254-913-8845" class="contact-btn">
+                            <span class="emoji">📱</span> 254-913-8845
+                        </a>
+                    </div>
+                </div>
+                
+                <a href="mailto:hollyphinney@gmail.com?subject=Feedback%20on%20SXSW%20Portfolio&body=Hi%20Holly,%0A%0AI%20wanted%20to%20give%20you%20feedback%20on%20your%20SXSW%20Capital%20Factory%20House%20portfolio:%0A%0A" target="_blank" class="feedback-btn">
+                    <span class="emoji">💬</span> Give Me Feedback
